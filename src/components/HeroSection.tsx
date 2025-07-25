@@ -28,9 +28,11 @@ export const HeroSection = () => {
 
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row items-center gap-4 lg:justify-start justify-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              Join eToro
-            </Button>
+            <a href="/login">
+              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
+                Join eToro
+              </Button>
+            </a>
           </div>
 
           {/* Social Proof */}

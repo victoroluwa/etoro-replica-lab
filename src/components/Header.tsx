@@ -7,9 +7,9 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Trading", href: "#" },
-    { label: "Investing", href: "#" },
-    { label: "Top Markets", href: "#" },
+    { label: "Trading", href: "/dashboard" },
+    { label: "Markets", href: "/markets" },
+    { label: "Portfolio", href: "/portfolio" },
     { label: "Education", href: "#" },
     { label: "Company", href: "#" },
   ];
@@ -19,9 +19,9 @@ export const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className="text-2xl font-bold text-etoro-green">
+          <a href="/" className="text-2xl font-bold text-etoro-green">
             eToro
-          </div>
+          </a>
         </div>
 
         {/* Desktop Navigation */}
@@ -48,10 +48,10 @@ export const Header = () => {
             <span className="ml-2">English (UK)</span>
           </Button>
           <Button variant="ghost" size="sm">
-            Login
+            <a href="/login">Login</a>
           </Button>
           <Button variant="etoro" size="sm">
-            Join eToro
+            <a href="/login">Join eToro</a>
           </Button>
         </div>
 

@@ -21,9 +21,11 @@ export const InterestSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="etoro" size="lg" className="px-8">
-                Join eToro
-              </Button>
+              <a href="/login">
+                <Button variant="etoro" size="lg" className="px-8">
+                  Join eToro
+                </Button>
+              </a>
               <Button variant="outline" size="lg" className="px-8">
                 Learn More
               </Button>
